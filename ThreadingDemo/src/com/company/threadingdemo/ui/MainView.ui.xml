@@ -46,6 +46,9 @@
                 <x:constraints weightx="0.0" />
             </XdevLabel>
         </XdevHorizontalLayout>
+        <XdevLabel x:name="label3" value="Label">
+            <x:constraints weighty="0.0" />
+        </XdevLabel>
     </XdevVerticalLayout>
 </XdevView>
 

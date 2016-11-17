@@ -140,6 +140,7 @@ public class MainView extends XdevView {
 		this.horizontalLayout2 = new XdevHorizontalLayout();
 		this.button4 = new XdevButton();
 		this.label2 = new XdevLabel();
+		this.label3 = new XdevLabel();
 
 		this.horizontalLayout.setMargin(new MarginInfo(false));
 		this.button2.setCaption("Button Start");
@@ -152,6 +153,7 @@ public class MainView extends XdevView {
 		this.button4.setCaption("Daten zählen");
 		this.label2.setStyleName("h1");
 		this.label2.setValue("Label");
+		this.label3.setValue("Label");
 
 		this.absoluteLayout.addComponent(this.button, "left:10px; top:7px");
 		this.button2.setSizeUndefined();
@@ -194,6 +196,9 @@ public class MainView extends XdevView {
 		this.horizontalLayout2.setHeight(-1, Unit.PIXELS);
 		this.verticalLayout.addComponent(this.horizontalLayout2);
 		this.verticalLayout.setComponentAlignment(this.horizontalLayout2, Alignment.MIDDLE_CENTER);
+		this.label3.setSizeUndefined();
+		this.verticalLayout.addComponent(this.label3);
+		this.verticalLayout.setComponentAlignment(this.label3, Alignment.MIDDLE_CENTER);
 		CustomComponent verticalLayout_spacer = new CustomComponent();
 		verticalLayout_spacer.setSizeFull();
 		this.verticalLayout.addComponent(verticalLayout_spacer);
@@ -206,10 +211,10 @@ public class MainView extends XdevView {
 		button3.addClickListener(event -> this.button3_buttonClick(event));
 		button4.addClickListener(event -> this.button4_buttonClick(event));
 	} // </generated-code>
-		// <generated-code name="variables">
 
+	// <generated-code name="variables">
 	private XdevButton button2, button, button3, button4;
-	private XdevLabel label, label2;
+	private XdevLabel label, label2, label3;
 	private XdevHorizontalLayout horizontalLayout, gridLayout, horizontalLayout2;
 	private XdevAbsoluteLayout absoluteLayout;
 	private XdevVerticalLayout verticalLayout; // </generated-code>
