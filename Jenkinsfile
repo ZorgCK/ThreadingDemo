@@ -9,13 +9,15 @@ pipeline {
   stages {
     stage('Start') {
       steps {
-        sh 'mvn clean'
+        sh '''cd ThreadingDemo/
+mvn clean'''
       }
     }
 
     stage('Build') {
       steps {
-        sh 'mvn -Dmaven.test.failure.ignore=true install'
+        sh '''cd ThreadingDemo/
+mvn -Dmaven.test.failure.ignore=true install'''
       }
     }
 
